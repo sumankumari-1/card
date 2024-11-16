@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Ovrlaping Card Layout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(109, 194, 194);
+        }
+        header{
+            background-color: rgb(51, 171, 241);
+            text-align: center;
+            color: rgb(5, 37, 73);
+            text-decoration: double;
+            margin-bottom: 10px;
+            height: 50px;
+        }
+        h2{g
+            text-align: center;
+        }
+        .card-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .card{
+            width: 300;
+            height: 200;
+            background-color: rgb(44, 141, 141);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0 ,0 ,0 ,0.1);
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            /* z-index: 1; */
+        }
+        .card2{
+            margin-left: -50px;
+            margin-top: -30px;
+            z-index: 2;
+        }
+        .card3{
+            margin-left: -50px;
+            margin-top: -30px;
+            z-index: 3;
+        }
+        .card:hover{
+            transform: translate(-10px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Overlaping Layout</h1>
+    </header>
+    <hr>
+    <div class="card container">
+        <div class="card 1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusantium fugiat assumenda aliquid in nam quia. Provident dignissimos doloremque aut tempora aperiam corrupti, sit, cum numquam in laboriosam nihil. Sit.</p>
+        </div>
+        <div class="card 2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, deserunt aliquid omnis ad vitae reprehenderit pariatur voluptatibus quidem sit ex illo distinctio suscipit corrupti blanditiis quia. Aut quod temporibus tempora.</p>
+
+        </div>
+        <div class="card 3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa minima nisi consequuntur dolores saepe. Illum et consectetur ab accusantium voluptatem eveniet iusto! Illo perferendis quae officia dolorem voluptatum, sequi similique.</p>
+
+        </div>
+    </div>
+</body>
+</html>
